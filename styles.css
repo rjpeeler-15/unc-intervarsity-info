@@ -84,6 +84,26 @@ p { margin: 0; }
   text-decoration: underline;
 }
 
+.hero-nav-end {
+  justify-content: flex-end;
+}
+
+.nav-cta {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.55rem 1.1rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.nav-cta:hover,
+.nav-cta:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--white);
+}
+
 .hero-content {
   flex: 1;
   display: flex;
