@@ -84,22 +84,6 @@ p { margin: 0; }
   text-decoration: underline;
 }
 
-.nav-cta {
-  color: var(--white);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  padding: 0.55rem 1.1rem;
-  border: 1.5px solid rgba(255, 255, 255, 0.55);
-  border-radius: 999px;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-.nav-cta:hover,
-.nav-cta:focus-visible {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: var(--white);
-}
-
 .hero-content {
   flex: 1;
   display: flex;
@@ -226,34 +210,9 @@ p { margin: 0; }
   max-width: var(--max-width);
   margin: 0 auto;
   padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 5vw, 3.5rem);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: clamp(1.5rem, 4vw, 2.5rem);
-}
-
-.split-alt {
-  background: var(--navy);
-  max-width: none;
-  border-radius: 0;
-}
-
-.split-alt .split-card {
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--white);
-}
-
-.split-alt {
-  padding: clamp(3rem, 8vw, 6rem) 0;
-}
-
-.split-alt > .split-card {
-  margin-left: 0;
-}
-
-.split-alt.split {
-  padding-left: clamp(1.25rem, 5vw, 3.5rem);
-  padding-right: clamp(1.25rem, 5vw, 3.5rem);
-  max-width: var(--max-width);
 }
 
 .split-card {
@@ -279,44 +238,9 @@ p { margin: 0; }
   width: fit-content;
 }
 
-.split-alt .tag {
-  color: var(--blue-light);
-  background: rgba(168, 205, 234, 0.15);
-}
-
 .split-card p {
   color: var(--muted);
   font-size: 1.02rem;
-}
-
-.split-alt .split-card p {
-  color: rgba(255, 255, 255, 0.82);
-}
-
-/* ---------- Connect ---------- */
-
-.connect {
-  padding: clamp(4rem, 10vw, 7rem) clamp(1.25rem, 5vw, 3.5rem);
-  text-align: center;
-}
-
-.connect-inner {
-  max-width: 640px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-
-.connect h2 {
-  font-size: clamp(1.7rem, 4vw, 2.3rem);
-  color: var(--navy);
-}
-
-.connect p {
-  color: var(--muted);
-  font-size: 1.05rem;
 }
 
 /* ---------- Footer ---------- */
@@ -345,13 +269,4 @@ p { margin: 0; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn:hover { transform: none; }
-}
-
-/* ---------- Responsive ---------- */
-
-@media (max-width: 760px) {
-  .split,
-  .split-alt.split {
-    grid-template-columns: 1fr;
-  }
 }
