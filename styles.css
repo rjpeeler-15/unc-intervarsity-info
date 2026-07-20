@@ -208,10 +208,6 @@ p { margin: 0; }
   background: rgba(168, 205, 234, 0.15);
 }
 
-.split-card h2 {
-  font-size: clamp(1.3rem, 3vw, 1.7rem);
-}
-
 .split-card p {
   color: var(--muted);
   font-size: 1.02rem;
@@ -219,10 +215,6 @@ p { margin: 0; }
 
 .split-alt .split-card p {
   color: rgba(255, 255, 255, 0.82);
-}
-
-.split-alt .split-card strong {
-  color: var(--white);
 }
 
 /* ---------- Connect ---------- */
