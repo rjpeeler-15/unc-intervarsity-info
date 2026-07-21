@@ -137,7 +137,7 @@ p { margin: 0; }
   align-items: center;
   gap: 1rem;
   width: 100%;
-  max-width: 320px;
+  max-width: 11rem;
 }
 
 @media (min-width: 600px) {
