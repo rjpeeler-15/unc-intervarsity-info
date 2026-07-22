@@ -104,6 +104,11 @@ p { margin: 0; }
   border-color: var(--white);
 }
 
+.btn.nav-cta {
+  font-size: 0.95rem;
+  padding: 0.55rem 1.1rem;
+}
+
 .hero-content {
   flex: 1;
   display: flex;
@@ -166,7 +171,7 @@ p { margin: 0; }
   align-items: center;
   justify-content: center;
   min-height: 52px;
-  min-width: 10.2rem;
+  min-width: 10rem;
   padding: 0.9rem 1.75rem;
   border-radius: 999px;
   font-weight: 700;
