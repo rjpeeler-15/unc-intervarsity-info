@@ -325,6 +325,27 @@ p { margin: 0; }
   font-size: 0.95rem;
 }
 
+.site-footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.site-footer-social a {
+  display: inline-flex;
+  color: var(--white);
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.site-footer-social a:hover,
+.site-footer-social a:focus-visible {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+
 /* ---------- Reveal animation ---------- */
 
 .reveal {
